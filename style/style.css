@@ -11,6 +11,8 @@ body {
 	width: 100%;
 }
 
+/* 1*SESSÃO - CABEÇALHO E HOME - GABRIEL   */
+
 #header-introduction {
 	display: flex;
 	align-items:center;
@@ -20,20 +22,9 @@ body {
 	background-color: #FFEAB6;
 }
 
-/* .grid-80 {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-direction: column;
-	width: 80vw;
-	height: auto;
-	background-color: blue;
-} */
-
 #logo {
 	margin-left: 120px;
 	width: 200px;
-	/* height: 160px; */
 }
 
 #nav-menu {
@@ -57,5 +48,49 @@ body {
 }
 
 #home {
-
+	display: flex;
+	justify-content: space-around;
+	height: 683px;
+	background-color: #FFEAB6 ;
 }
+
+#home h1 {	
+	margin-top: 50px;
+	font-weight: 600;
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 70px; 
+	letter-spacing: 1.44px;
+}
+
+#introduction-text-box > p {
+	margin-top: 30px;
+	color: #686868;
+	font-family: 'Lora';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 35px; /* 175% */
+  letter-spacing: 0.6px;
+}
+
+#home button {
+	margin-top: 60px;
+	width: 336px;
+	height: 60px;
+	border-radius: 30px;
+	background-color: #9864C0;
+	border: 30px;
+	cursor: pointer;
+}
+
+#home button > p {
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Raleway';
+	font-weight: 700;
+	line-height: 35px; /* 194.444% */
+	letter-spacing: 0.54px;
+	text-align: center;
+}
+/* 1° SEÇÃO - CABEÇALHO E HOME - GABRIEL - END */
