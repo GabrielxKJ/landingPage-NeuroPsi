@@ -15,6 +15,12 @@ body {
   padding: 0 120px;
 } */
 
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 /* 1*SESSÃO - CABEÇALHO E HOME - GABRIEL   */
 
 #header-introduction {
@@ -55,6 +61,7 @@ body {
   display: flex;
   justify-content: space-around;
   height: 683px;
+	width: 100%;
   background-color: #ffeab6;
   background-image: url("../assets/images/home-ellipse.png");
   background-repeat: no-repeat;
@@ -158,10 +165,214 @@ body {
 }
 /* 1° SEÇÃO - CABEÇALHO E HOME - GABRIEL - END */
 
+
+/* ----- CONTATO - INÍCIO (PIMENTEL) ----- */
+
+.section-presentation {
+	width: 30rem;
+}
+
+h2 {
+	color: #020202;
+	font-family: Lora;
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+h3 {
+	color: #686868;
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.contact-box {
+	width: 100%;
+	height: 900px;
+	background: linear-gradient(180deg, #9864C0 0%, #5B2E7E 81.77%);
+	display: flex;
+	justify-content: center;
+	margin-top: 14rem;
+}
+
+#contact {
+	max-width: 1440px;
+	display: flex;
+	column-gap: 1.25rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contact-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	padding-bottom: 2rem;
+	margin-top: -8rem;
+	width: 16rem;
+	height: 16rem;
+	border-radius: 1.25rem;
+	background: #FFF;
+	box-shadow: 0px 4px 15px 3px rgba(77, 77, 77, 0.40);
+}
+
+.wpp-card {
+	background-image: url("/assets/logo/social/whatsapp.png");
+}
+
+.insta-card {
+	background-image: url("/assets/logo/social/instagram.png");
+}
+
+.tel-card {
+	background-image: url("/assets/logo/social/phone.png");
+}
+
+.email-card {
+	background-image: url("/assets/logo/social/email.png");
+}
+
+.wpp-card,
+.insta-card,
+.tel-card,
+.email-card {
+	background-repeat: no-repeat;
+	background-position: 50% 25%;
+	background-size: 22%;
+}
+
+.contact-card p {
+	color: #000;
+	font-family: Lora;
+	font-size: 1.3rem;
+	font-weight: 800;
+	padding: 0.9rem 0;
+}
+
+.contact-card .card-info {
+	color: #8E8E8E;
+	font-size: 1rem;
+}
+
+.formbox {
+	display: flex;
+	border-radius: 1.875rem;
+	background: #FFF;
+	box-shadow: 0px 4px 40px 4px #5C2E7F;
+	max-width: 35rem;
+	height: 35rem;
+	margin-right: 1.35rem;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	padding: 3rem 2.3rem;
+	row-gap: 2.9rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+	color: #8854af;
+	font-family: Raleway;
+	font-size: 1rem;
+	font-style: italic;
+	font-weight: 700;
+	width: 25rem;
+	height: 3rem;
+	border-radius: 22px;
+	border: 1px solid #9864C0;
+	padding: 1rem 1.2rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+	color: #aaaaaa;
+	font-weight: 500;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+	border: 2px solid #9864C0;
+	background-color: #f4e8fd;
+}
+
+#msg {
+	border-radius: 20px;
+	height: 12rem;
+	resize: none;
+}
+
+.contact-form input[type="submit"] {
+	color: #fff;
+	font-family: Raleway;
+	font-size: 0.9rem;
+	font-style: normal;
+	font-weight: 700;
+	width: 17rem;
+	height: 3.3rem;
+	border-radius: 40px;
+	background: #9864C0;
+	align-self: center;
+	transition: all 150ms;
+	cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+	background: #613385;
+}
+
+#address {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	max-width: 550px;
+	height: 35rem;
+	margin-left: 1.35rem;
+}
+
+#address p {
+	color: #EDEDED;
+	font-family: Raleway;
+	font-size: 1.25rem;
+	font-style: italic;
+	font-weight: 800;
+	text-decoration-line: underline;
+	text-align: center;
+}
+
+address {
+	color: #C8C8C8;
+	font-family: Raleway;
+	text-align: center;
+	margin-top: -0.7rem;
+	max-width: 350px;
+	align-self: center;
+}
+
+iframe {
+	border-radius: 10px;
+	box-shadow: 0px 4px 40px 4px #5C2E7F;
+}
+
+/* ----- CONTATO - FINAL (PIMENTEL) ----- */
+
+
 /* ----- FOOTER - INÍCIO (PIMENTEL) ----- */
 
 footer {
-  width: 100%;
+	width: 100%;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-box {
+  max-width: 1440px;
   display: flex;
   background-color: #000;
   padding: 5rem 7.5rem;
@@ -204,10 +415,10 @@ a[class="footer-default"]:hover {
   display: flex;
 }
 
-#email {
+#email-sub {
   margin: 0.3rem 0;
   height: 60px;
-  width: 100%;
+  width: 25rem;
   padding: 0 1.3rem;
   border-radius: 40px;
   border: 2px solid #aaa;
@@ -216,21 +427,22 @@ a[class="footer-default"]:hover {
   font-family: Raleway;
   font-weight: 600;
   font-size: 0.9rem;
+	transition: all 150ms;
 }
 
-#email:focus {
+#email-sub:focus {
   outline: none;
+	background-color: #1f1f1f;
 }
 
-input[type="submit"] {
+footer input[type="submit"] {
   border-radius: 50px;
   border: none;
   background-color: #aaa;
   position: absolute;
   height: 60px;
   padding: 0 1rem;
-  margin: 0.3rem 0;
-  right: 0;
+  margin: 0.3rem 18rem;
   margin-right: 7.5rem;
   color: #000000;
   font-family: Raleway;
