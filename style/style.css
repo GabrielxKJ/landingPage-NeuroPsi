@@ -158,6 +158,220 @@ body {
 }
 /* 1° SEÇÃO - CABEÇALHO E HOME - GABRIEL - END */
 
+/* VIDEO E ABOUT - RAQUEL */
+
+#video {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  overflow: hidden;
+  margin: 8rem 0;
+}
+
+#video > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1440px;
+  column-gap: 3.87rem;
+  padding: 1rem 0 1rem;
+}
+
+#video > div .content{
+  text-align: center;
+  width: 60%;
+}
+#video > div #videos {
+  text-align: center;
+  width: 40%;
+}
+
+#video > div .content h2 {
+  color: #020202;
+  font-family: Lora;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: 0.075rem;
+  margin-bottom: 3rem;
+}
+
+#video > div .content p {
+  color: #686868;
+  font-family: Lora;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.0375rem;
+  margin-bottom: 1rem;
+}
+
+#video > div .content button {
+  margin-top: 60px;
+  width: 336px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #9864c0;
+  border: 30px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Raleway";
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0.54px;
+  text-align: center;
+}
+
+#video > div #videos {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#video > div #videos .btn-video {
+  background: white;
+  color: black;
+  outline: none;
+  border: grey solid 1px;
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+#my-video{
+  width: 25rem;
+  height: 45rem;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+#my-video.vjs-fullscreen video{
+  width: 100% !important;
+}
+
+#video > div #videos video {
+  width: 25rem;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+#video .container {
+  display: flex;
+  justify-content: center;
+}
+
+/* #video .container video {
+  z-index: -2;
+} */
+
+#video button i {
+  color: grey;
+  font-size: 30px;
+}
+
+#video #right-btn, #video #left-btn {
+  margin: auto 0;
+}
+
+#about > div {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    #fff3d7 8.33%,
+    #fff1ce 93.23%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+}
+
+#about div .strokes {
+  overflow: hidden;
+}
+
+#about div .strokes img {
+  width: 100vw;
+  height: 80px;
+}
+
+#about div .strokes img:nth-of-type(2) {
+  margin-top: -70px;
+}
+
+#about .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1440px;
+  column-gap: 3.87rem;
+  padding: 1rem 0 1rem;
+}
+
+#about .content #info {
+  width: 36.625rem;
+  flex-shrink: 0;
+}
+
+#about .content #info h2 {
+  color: #020202;
+  font-family: Lora;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: 0.075rem;
+  margin-bottom: 3rem;
+}
+
+#about .content #info p {
+  color: #686868;
+  font-family: Lora;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.0375rem;
+}
+
+#about .content #info button {
+  margin-top: 60px;
+  width: 336px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #9864c0;
+  border: 30px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Raleway";
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0.54px;
+  text-align: center;
+}
+
 /* ----- FOOTER - INÍCIO (PIMENTEL) ----- */
 
 footer {

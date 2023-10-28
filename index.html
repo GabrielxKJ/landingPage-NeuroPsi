@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>Dra. Julianna Rocha</title>
 	<link rel="stylesheet" href="./style/style.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+	<link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
 	<link rel="icon" type="image/png" href="/assets/logo/favicon.png">
 </head>
 
@@ -13,88 +15,173 @@
 	<div id="container">
 
 		<header id="header-introduction">
-				<img id="logo" src="./assets/logo/logo.png" alt="logo">
-				<nav id="nav-menu">
-					<ul id="ul-menu">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#services">Serviços</a></li>
-						<li><a href="#about">Sobre</a></li>
-						<li><a href="#appraisal">Avaliações</a></li>
-						<li><a href="#contact">Contato</a></li>
-						<li><a href="#adress">Endereços</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+			<img id="logo" src="./assets/logo/logo.png" alt="logo">
+			<nav id="nav-menu">
+				<ul id="ul-menu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#services">Serviços</a></li>
+					<li><a href="#about">Sobre</a></li>
+					<li><a href="#appraisal">Avaliações</a></li>
+					<li><a href="#contact">Contato</a></li>
+					<li><a href="#adress">Endereços</a></li>
+				</ul>
+			</nav>
+	</div>
+	</header>
 
-		<main>
-			<section id="home">
-				<div id="introduction-text-box">
-					<h1>Seus filhos são a  minha prioridade</h1>
-					<p class="introduction-text-box-description">
-						Tenho a missão de promover a excelência no atendimento da neuropsicopedagogia, intermediando a superação das dificuldades de aprendizagem.
+	<main>
+		<section id="home">
+			<div id="introduction-text-box">
+				<h1>Seus filhos são a minha prioridade</h1>
+				<p class="introduction-text-box-description">
+					Tenho a missão de promover a excelência no atendimento da neuropsicopedagogia, intermediando a
+					superação das dificuldades de aprendizagem.
+				</p>
+				<button class="introduction-text-box-cta">
+					<p>Agende uma consulta</p>
+				</button>
+			</div>
+
+			<div id="introduction-image-box">
+				<img src="./assets/images/dra.png" alt="dra-pointing-out">
+				<div class="image-box-description">
+					<span class="image-box-description-title">Dra. Julianna Rocha</span>
+					<span class="image-box-description-subtitle">Neuropsicopedagoga</span>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="services">
+
+		</section>
+
+		<section id="video">
+			<div>
+				<div class="content">
+					<h2>
+						Confira os conteúdos informativos exclusivos
+					</h2>
+					<p>
+						Sempre buscando atender com excelência, também disponibilizamos conteúdos informativos em nossas
+						redes sociais. Saiba tudo sobre o trabalho realizado e como manter a si e àqueles que ama sempre
+						saudáveis.
 					</p>
-					<button class="introduction-text-box-cta">
-						<p>Agende uma consulta</p>
+					<p>
+						Não deixe de nos seguir no Instagram e conferir os melhores conteúdos relacionados a bem-estar
+						físico e mental.
+					</p>
+					<button>
+						Siga no Instagram
 					</button>
 				</div>
-				
-				<div id="introduction-image-box">
-					<img src="./assets/images/dra.png" alt="dra-pointing-out">
-					<div class="image-box-description">
-						<span class="image-box-description-title">Dra. Julianna Rocha</span>
-						<span class="image-box-description-subtitle" >Neuropsicopedagoga</span>
+				<div id="videos">
+					<div class="container">
+						<button id="left-btn" class="btn-video">
+							<i class="uil uil-angle-left-b"></i>
+						</button>
+						<!-- <img id="carousel" src="" alt=""> -->
+						<!-- <video id="carousel" src=""></video> -->
+						<video id="my-video" class="video-js" controls preload="auto"
+							data-setup="{}">
+							<source id="carousel" src="" type="video/mp4" />
+						</video>
+						<button id="right-btn" class="btn-video">
+							<i class="uil uil-angle-right-b"></i>
+						</button>
 					</div>
 				</div>
-				
-			</section>
-			
-			<section id="services">
-
-			</section>
-			<section id="about"></section>
-			<section id="appraisal"></section>
-			<section id="contact"></section>
-			<section id="adress"></section>
-		</main>
-
-		<footer>
-			<section class="footer-column">
-				<p class="footer-topic">Horários de atendimento</p>
-				<p class="footer-default">Seg - sex: <span>8h às 21h</span></p>
-				<p class="footer-default">Sab: <span>8h às 16h</span></p>
-			</section>
-			<section class="footer-column">
-				<p class="footer-topic">Links úteis</p>
-				<a class="footer-default" href="#">Perguntas frequentes</a>
-				<a class="footer-default" href="#">Políticas de privacidade</a>
-			</section>
-			<section class="footer-column">
-				<p class="footer-topic">Receba novidades e promoções</p>
-				<form action="" method="">
-					<input type="email" name="email" id="email" placeholder="Digite seu e-mail">
-					<input type="submit" value="Inscreva-se">
-				</form>
-			</section>
-			<div class="footer-line"></div>
-			<p class="footer-copyright">Dra. Julianna Rocha Saúde Integrativa © 2023. Todos os direitos reservados.</p>
-			<div class="footer-social">
-				<a href="#">
-					<img src="./assets/logo/social/whatsapp-footer.png" alt="whatsapp logo">
-				</a>
-				<a href="#">
-					<img src="./assets/logo/social/instagram-footer.png" alt="instagram logo">
-				</a>
-				<a href="#">
-					<img src="./assets/logo/social/telegram-footer.png" alt="telegram logo">
-				</a>
 			</div>
-		</footer>
+		</section>
 
-		<a class="whatsapp-float" href="https://wa.me/1234567890">
-			<img src="./assets/logo/social/whatsapp-icon.svg" alt="Logo do aplicativo Whatsapp flutuante" />
-		</a>
+		<section id="about">
+			<div>
+				<div class="strokes">
+					<img src="./assets/images/curve.png" alt="">
+					<img src="./assets/images/curve-1.png" alt="">
+				</div>
+				<div class="content">
+					<div id="image">
+						<img src="./assets/exemples/about.svg" alt="">
+					</div>
+					<div id="info">
+						<h2>
+							Saiba mais sobre a Dra. Julianna
+						</h2>
+						<p>
+							Profissional com formação inicial na área da saúde e educação, atuante na área da educação
+							desde
+							2007, sempre esteve em busca de aprimoramento profissional que unisse as duas áreas, uma vez
+							que
+							na licenciatura possuía a percepção das diferentes necessidades, dificuldades e transtornos
+							de
+							aprendizagem. Em busca de conhcecimento e atualização, fez vários cursos livres envolvendo
+							psicologia, educação e neurociências.
+						</p>
+						<p>
+							Pós-graduada em Biomedicina, em Psicopedagogia Sistêmica e em Neuropsicopedagogia Clínica e
+							Institucional, além de formação de aprimoramento profissional pela UNIFESP - Ambulatório de
+							Neuroplasticidade Cerebral - CPN NANI. Atualmente Terapeuta em Análise Comportamental
+							Aplicada
+							(ABA).
+						</p>
+						<button>
+							Entre em contato
+						</button>
+					</div>
+				</div>
+				<div class="strokes">
+					<img src="./assets/images/curve.png" alt="">
+					<img src="./assets/images/curve-1.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section id="appraisal"></section>
+		<section id="contact"></section>
+		<section id="adress"></section>
+	</main>
+
+	<footer>
+		<section class="footer-column">
+			<p class="footer-topic">Horários de atendimento</p>
+			<p class="footer-default">Seg - sex: <span>8h às 21h</span></p>
+			<p class="footer-default">Sab: <span>8h às 16h</span></p>
+		</section>
+		<section class="footer-column">
+			<p class="footer-topic">Links úteis</p>
+			<a class="footer-default" href="#">Perguntas frequentes</a>
+			<a class="footer-default" href="#">Políticas de privacidade</a>
+		</section>
+		<section class="footer-column">
+			<p class="footer-topic">Receba novidades e promoções</p>
+			<form action="" method="">
+				<input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+				<input type="submit" value="Inscreva-se">
+			</form>
+		</section>
+		<div class="footer-line"></div>
+		<p class="footer-copyright">Dra. Julianna Rocha Saúde Integrativa © 2023. Todos os direitos reservados.</p>
+		<div class="footer-social">
+			<a href="#">
+				<img src="./assets/logo/social/whatsapp-footer.png" alt="whatsapp logo">
+			</a>
+			<a href="#">
+				<img src="./assets/logo/social/instagram-footer.png" alt="instagram logo">
+			</a>
+			<a href="#">
+				<img src="./assets/logo/social/telegram-footer.png" alt="telegram logo">
+			</a>
+		</div>
+	</footer>
+
+	<a class="whatsapp-float" href="https://wa.me/1234567890">
+		<img src="./assets/logo/social/whatsapp-icon.svg" alt="Logo do aplicativo Whatsapp flutuante" />
+	</a>
 	</div>
+
+	<script src="./js/script.js"></script>
+	<script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
 </body>
 
 </html>
