@@ -15,10 +15,34 @@ body {
   padding: 0 120px;
 } */
 
+/* ---------- USO COMUM ---------- */
+
 main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+button {
+  margin-top: 60px;
+  width: 350px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #9864c0;
+  border: 30px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Raleway";
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0.54px;
+  text-align: center;
+  transition: all 225ms;
+}
+
+button:hover {
+  background-color: #613385;
 }
 
 /* 1*SESSÃO - CABEÇALHO E HOME - GABRIEL   */
@@ -387,10 +411,88 @@ main {
 
 /* ----- ABOUT - FIM (RAQUEL) ----- */
 
-/* ----- CONTATO - INÍCIO (PIMENTEL) ----- */
+
+/* ----- AVALIAÇÕES - INÍCIO (PIMENTEL) ----- */
 
 .section-presentation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+	width: 35rem;
+  margin-top: 4rem;
+  flex-basis: 100%;
+}
+
+#appraisal {
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  max-width: 1300px;
+  flex-wrap: wrap;
+}
+
+.appraisal-carroussel {
+  display: flex;
+  height: 600px;
+  align-items: center;
+  margin: 0 2rem;
+  column-gap: 2rem;
+}
+
+.carroussel-card {
+  max-width: 400px;
+}
+
+.carroussel-card svg {
+  display: flex;
+}
+
+.front-card {
+  display: flex;
+  margin-top: -355px;
+  margin-left: 15px;
+}
+
+.card-pointer {
+  margin-left: 55px;
+  margin-top: -10px;
+}
+
+svg + p {
+  color: #888888;
+  font-family: Lora;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+  display: flex;
+  position: absolute;
+  width: 18rem;
+  margin-top: -325px;
+  margin-left: 55px;
+}
+
+svg + span {
+  display: block;
+  color: #020202;
+  font-family: Lora;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 6px;
+}
+
+/* ----- AVALIAÇÕES - FIM (PIMENTEL) ----- */
+
+
+/* ----- CONTATO - INÍCIO (PIMENTEL) ----- */
+
+#appraisal + .section-presentation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 	width: 30rem;
+  flex-basis: 100%;
 }
 
 h2 {
@@ -400,13 +502,16 @@ h2 {
 	font-weight: 700;
 	text-align: center;
 	margin-bottom: 2rem;
+  flex-basis: 100%;
 }
 
 h3 {
+  width: 33rem;
 	color: #686868;
 	text-align: center;
 	font-size: 1.25rem;
 	font-weight: 500;
+  line-height: 2rem;
 }
 
 .contact-box {
