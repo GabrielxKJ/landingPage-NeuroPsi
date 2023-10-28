@@ -158,7 +158,9 @@ body {
 }
 /* 1° SEÇÃO - CABEÇALHO E HOME - GABRIEL - END */
 
-/* VIDEO E ABOUT - RAQUEL */
+/* -------------- VIDEO E ABOUT - RAQUEL -------------- */
+
+/* ----- ABOUT - INÍCIO (RAQUEL) ----- */
 
 #video {
   display: grid;
@@ -293,6 +295,10 @@ body {
   margin: auto 0;
 }
 
+/* ----- VIDEO - FIM (RAQUEL) ----- */
+
+/* ----- ABOUT - INÍCIO (RAQUEL) ----- */
+
 #about > div {
   display: grid;
   justify-content: center;
@@ -371,6 +377,8 @@ body {
   letter-spacing: 0.54px;
   text-align: center;
 }
+
+/* ----- ABOUT - FIM (RAQUEL) ----- */
 
 /* ----- FOOTER - INÍCIO (PIMENTEL) ----- */
 
@@ -481,6 +489,7 @@ input[type="submit"]:hover {
   width: 40px;
   height: 40px;
 }
+
 /* ----- FOOTER - FINAL (PIMENTEL) ----- */
 
 .whatsapp-float {
