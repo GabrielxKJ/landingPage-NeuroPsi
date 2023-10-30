@@ -45,7 +45,7 @@ button:hover {
   background-color: #613385;
 }
 
-/* 1*SESSÃO - CABEÇALHO E HOME - GABRIEL   */
+/* --------------- CABEÇALHO E HOME - GABRIEL - INICIO -------------  */
 
 #header-introduction {
   display: flex;
@@ -163,7 +163,7 @@ button:hover {
   gap: 5px;
 }
 
-#home button {
+/* #home button {
   margin-top: 60px;
   width: 336px;
   height: 60px;
@@ -171,12 +171,12 @@ button:hover {
   background-color: #9864c0;
   border: 30px;
   cursor: pointer;
-}
+} */
 
-#home button:hover {
+/* #home button:hover {
   filter: opacity(0.5);
   transition: 1.5s ease;
-}
+} */
 
 #home button > p {
   color: #fff;
@@ -187,7 +187,111 @@ button:hover {
   letter-spacing: 0.54px;
   text-align: center;
 }
-/* 1° SEÇÃO - CABEÇALHO E HOME - GABRIEL - END */
+/* ------------------- CABEÇALHO E HOME - GABRIEL - FIM ----------- */
+
+
+/* -------- SERVIÇOS - GABRIEL - INICIO ------- */
+#services {
+  /* display: flex; */
+  width: 1440px;
+  height: 1348px;
+}
+
+.services-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-title h1 {
+  width: 516px;
+  color: #020202;
+  text-align: center;
+  font-family: Lora;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 175% */
+  letter-spacing: 1.2px;
+}
+
+.services-title p {
+  width: 607px;
+  height: 107px;
+  color: #686868;
+  text-align: center;
+  font-family: Lora;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px; /* 175% */
+  letter-spacing: 0.6px;
+  margin-bottom: 74px;
+}
+
+.services-cards-box {
+  padding: 24px 62px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;  
+}
+
+.services-cards {
+  padding: 53px 0px 45px 25px;
+  margin-bottom: 74px;
+  width: 350px;
+  height: 360px;
+  border-radius: 25px 80px;
+  border: 8px solid #BFEDF3;
+  background: #FFF;
+}
+
+.services-cards h3 {
+  margin-top: 24px;
+  width: 280px;
+  height: 57px;
+  color: #212121;
+  font-family: Lora;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.66px;
+  text-align: left;
+}
+
+.services-cards p {
+  margin-bottom: 62px;
+  width: 280px;
+  height: 86px;
+  color: #777;
+  font-family: Lora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.services-title-box p {
+  width: 607px;
+  color: #686868;
+  text-align: center;
+  font-family: 'Lora';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px; /* 175% */
+  letter-spacing: 0.6px;
+}
+
+#services button {
+  margin: 0 auto;
+  display: block;
+}
+/* -------- SERVIÇOS - GABRIEL - FIM ------- */
+
+
 
 /* -------------- VIDEO E ABOUT - RAQUEL -------------- */
 
