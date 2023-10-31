@@ -18,9 +18,9 @@ body {
 /* ---------- USO COMUM ---------- */
 
 main {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 button {
@@ -189,7 +189,6 @@ button:hover {
 }
 /* ------------------- CABEÇALHO E HOME - GABRIEL - FIM ----------- */
 
-
 /* -------- SERVIÇOS - GABRIEL - INICIO ------- */
 #services {
   /* display: flex; */
@@ -233,7 +232,7 @@ button:hover {
   padding: 24px 62px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .services-cards {
@@ -242,8 +241,8 @@ button:hover {
   width: 350px;
   height: 360px;
   border-radius: 25px 80px;
-  border: 8px solid #BFEDF3;
-  background: #FFF;
+  border: 8px solid #bfedf3;
+  background: #fff;
 }
 
 .services-cards h3 {
@@ -277,7 +276,7 @@ button:hover {
   width: 607px;
   color: #686868;
   text-align: center;
-  font-family: 'Lora';
+  font-family: "Lora";
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -290,8 +289,6 @@ button:hover {
   display: block;
 }
 /* -------- SERVIÇOS - GABRIEL - FIM ------- */
-
-
 
 /* -------------- VIDEO E ABOUT - RAQUEL -------------- */
 
@@ -311,10 +308,10 @@ button:hover {
   align-items: center;
   max-width: 1440px;
   column-gap: 3.87rem;
-  padding: 1rem 0 1rem;
+  padding: 1rem 2rem 1rem;
 }
 
-#video > div .content{
+#video > div .content {
   text-align: center;
   width: 60%;
 }
@@ -389,7 +386,7 @@ button:hover {
   height: 50px;
 }
 
-#my-video{
+#my-video {
   width: 25rem;
   height: 45rem;
   border-radius: 40px;
@@ -399,7 +396,7 @@ button:hover {
   -o-border-radius: 40px;
 }
 
-#my-video.vjs-fullscreen video{
+#my-video.vjs-fullscreen video {
   width: 100% !important;
 }
 
@@ -426,7 +423,8 @@ button:hover {
   font-size: 30px;
 }
 
-#video #right-btn, #video #left-btn {
+#video #right-btn,
+#video #left-btn {
   margin: auto 0;
 }
 
@@ -467,7 +465,7 @@ button:hover {
   align-items: center;
   max-width: 1440px;
   column-gap: 3.87rem;
-  padding: 1rem 0 1rem;
+  padding: 1rem 2rem 1rem;
 }
 
 #about .content #info {
@@ -513,8 +511,63 @@ button:hover {
   text-align: center;
 }
 
-/* ----- ABOUT - FIM (RAQUEL) ----- */
+@media screen and (max-width: 991px) {
+  #video {
+    margin: 2rem;
+  }
 
+  #video > div {
+    flex-direction: column;
+    max-width: 940px;
+    padding: 2rem;
+    row-gap: 3.87rem;
+  }
+
+  #video > div .content {
+    width: 100%;
+  }
+
+  #video > div .content h2 {
+    color: #020202;
+    text-align: center;
+    font-family: Lora;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.09rem;
+  }
+
+  #about > div {
+    max-width: 940px;
+  }
+  
+  #about div .strokes {
+    max-width: 940px;
+  }
+  
+  #about div .strokes img {
+    width: 100%;
+  }
+  
+  #about .content {
+    flex-direction: column;
+    max-width: 940px;
+    row-gap: 3.87rem;
+    padding: 1rem 4rem 1rem;
+  }
+
+  #about .content #image img{
+    height: 40rem;
+  }
+
+  #about .content #info{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+}
+
+/* ----- ABOUT - FIM (RAQUEL) ----- */
 
 /* ----- AVALIAÇÕES - INÍCIO (PIMENTEL) ----- */
 
@@ -522,7 +575,7 @@ button:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-	width: 35rem;
+  width: 35rem;
   margin-top: 4rem;
   flex-basis: 100%;
 }
@@ -588,205 +641,204 @@ svg + span {
 
 /* ----- AVALIAÇÕES - FIM (PIMENTEL) ----- */
 
-
 /* ----- CONTATO - INÍCIO (PIMENTEL) ----- */
 
 #appraisal + .section-presentation {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-	width: 30rem;
+  width: 30rem;
   flex-basis: 100%;
 }
 
 h2 {
-	color: #020202;
-	font-family: Lora;
-	font-size: 2.5rem;
-	font-weight: 700;
-	text-align: center;
-	margin-bottom: 2rem;
+  color: #020202;
+  font-family: Lora;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
   flex-basis: 100%;
 }
 
 h3 {
   width: 33rem;
-	color: #686868;
-	text-align: center;
-	font-size: 1.25rem;
-	font-weight: 500;
+  color: #686868;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
   line-height: 2rem;
 }
 
 .contact-box {
-	width: 100%;
-	height: 900px;
-	background: linear-gradient(180deg, #9864C0 0%, #5B2E7E 81.77%);
-	display: flex;
-	justify-content: center;
-	margin-top: 14rem;
+  width: 100%;
+  height: 900px;
+  background: linear-gradient(180deg, #9864c0 0%, #5b2e7e 81.77%);
+  display: flex;
+  justify-content: center;
+  margin-top: 14rem;
 }
 
 #contact {
-	max-width: 1440px;
-	display: flex;
-	column-gap: 1.25rem;
-	flex-wrap: wrap;
-	justify-content: center;
+  max-width: 1440px;
+  display: flex;
+  column-gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contact-card {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-end;
-	padding-bottom: 2rem;
-	margin-top: -8rem;
-	width: 16rem;
-	height: 16rem;
-	border-radius: 1.25rem;
-	background: #FFF;
-	box-shadow: 0px 4px 15px 3px rgba(77, 77, 77, 0.40);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+  margin-top: -8rem;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0px 4px 15px 3px rgba(77, 77, 77, 0.4);
 }
 
 .wpp-card {
-	background-image: url("/assets/logo/social/whatsapp.png");
+  background-image: url("/assets/logo/social/whatsapp.png");
 }
 
 .insta-card {
-	background-image: url("/assets/logo/social/instagram.png");
+  background-image: url("/assets/logo/social/instagram.png");
 }
 
 .tel-card {
-	background-image: url("/assets/logo/social/phone.png");
+  background-image: url("/assets/logo/social/phone.png");
 }
 
 .email-card {
-	background-image: url("/assets/logo/social/email.png");
+  background-image: url("/assets/logo/social/email.png");
 }
 
 .wpp-card,
 .insta-card,
 .tel-card,
 .email-card {
-	background-repeat: no-repeat;
-	background-position: 50% 25%;
-	background-size: 22%;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: 22%;
 }
 
 .contact-card p {
-	color: #000;
-	font-family: Lora;
-	font-size: 1.3rem;
-	font-weight: 800;
-	padding: 0.9rem 0;
+  color: #000;
+  font-family: Lora;
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding: 0.9rem 0;
 }
 
 .contact-card .card-info {
-	color: #8E8E8E;
-	font-size: 1rem;
+  color: #8e8e8e;
+  font-size: 1rem;
 }
 
 .formbox {
-	display: flex;
-	border-radius: 1.875rem;
-	background: #FFF;
-	box-shadow: 0px 4px 40px 4px #5C2E7F;
-	max-width: 35rem;
-	height: 35rem;
-	margin-right: 1.35rem;
+  display: flex;
+  border-radius: 1.875rem;
+  background: #fff;
+  box-shadow: 0px 4px 40px 4px #5c2e7f;
+  max-width: 35rem;
+  height: 35rem;
+  margin-right: 1.35rem;
 }
 
 .contact-form {
-	display: flex;
-	flex-direction: column;
-	padding: 3rem 2.3rem;
-	row-gap: 2.9rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2.3rem;
+  row-gap: 2.9rem;
 }
 
 .contact-form input,
 .contact-form textarea {
-	color: #8854af;
-	font-family: Raleway;
-	font-size: 1rem;
-	font-style: italic;
-	font-weight: 700;
-	width: 25rem;
-	height: 3rem;
-	border-radius: 22px;
-	border: 1px solid #9864C0;
-	padding: 1rem 1.2rem;
+  color: #8854af;
+  font-family: Raleway;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700;
+  width: 25rem;
+  height: 3rem;
+  border-radius: 22px;
+  border: 1px solid #9864c0;
+  padding: 1rem 1.2rem;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-	color: #aaaaaa;
-	font-weight: 500;
+  color: #aaaaaa;
+  font-weight: 500;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-	border: 2px solid #9864C0;
-	background-color: #f4e8fd;
+  border: 2px solid #9864c0;
+  background-color: #f4e8fd;
 }
 
 #msg {
-	border-radius: 20px;
-	height: 12rem;
-	resize: none;
+  border-radius: 20px;
+  height: 12rem;
+  resize: none;
 }
 
 .contact-form input[type="submit"] {
-	color: #fff;
-	font-family: Raleway;
-	font-size: 0.9rem;
-	font-style: normal;
-	font-weight: 700;
-	width: 17rem;
-	height: 3.3rem;
-	border-radius: 40px;
-	background: #9864C0;
-	align-self: center;
-	transition: all 150ms;
-	cursor: pointer;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 700;
+  width: 17rem;
+  height: 3.3rem;
+  border-radius: 40px;
+  background: #9864c0;
+  align-self: center;
+  transition: all 150ms;
+  cursor: pointer;
 }
 
 .contact-form input[type="submit"]:hover {
-	background: #613385;
+  background: #613385;
 }
 
 #address {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	max-width: 550px;
-	height: 35rem;
-	margin-left: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 550px;
+  height: 35rem;
+  margin-left: 1.35rem;
 }
 
 #address p {
-	color: #EDEDED;
-	font-family: Raleway;
-	font-size: 1.25rem;
-	font-style: italic;
-	font-weight: 800;
-	text-decoration-line: underline;
-	text-align: center;
+  color: #ededed;
+  font-family: Raleway;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 800;
+  text-decoration-line: underline;
+  text-align: center;
 }
 
 address {
-	color: #C8C8C8;
-	font-family: Raleway;
-	text-align: center;
-	margin-top: -0.7rem;
-	max-width: 350px;
-	align-self: center;
+  color: #c8c8c8;
+  font-family: Raleway;
+  text-align: center;
+  margin-top: -0.7rem;
+  max-width: 350px;
+  align-self: center;
 }
 
 iframe {
-	border-radius: 10px;
-	box-shadow: 0px 4px 40px 4px #5C2E7F;
+  border-radius: 10px;
+  box-shadow: 0px 4px 40px 4px #5c2e7f;
 }
 
 /* ----- CONTATO - FINAL (PIMENTEL) ----- */
