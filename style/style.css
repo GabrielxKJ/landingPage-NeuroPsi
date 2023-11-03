@@ -127,6 +127,10 @@ button:hover {
   position: relative;
 }
 
+#introduction-image-box img {
+  height: 640px;
+}
+
 .image-box-description-title {
   color: #111;
   text-align: center;
@@ -163,20 +167,6 @@ button:hover {
   gap: 5px;
 }
 
-/* #home button {
-  margin-top: 60px;
-  width: 336px;
-  height: 60px;
-  border-radius: 30px;
-  background-color: #9864c0;
-  border: 30px;
-  cursor: pointer;
-} */
-
-/* #home button:hover {
-  filter: opacity(0.5);
-  transition: 1.5s ease;
-} */
 
 #home button > p {
   color: #fff;
