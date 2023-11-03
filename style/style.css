@@ -528,12 +528,7 @@ button:hover {
   }
 
   #video > div .content h2 {
-    color: #020202;
-    text-align: center;
-    font-family: Lora;
     font-size: 3rem;
-    font-style: normal;
-    font-weight: 700;
     letter-spacing: 0.09rem;
   }
 
@@ -566,6 +561,68 @@ button:hover {
     justify-items: center;
   }
 }
+
+@media screen and (max-width: 480px) {
+  #video > div .content {
+    max-width: 420px;
+    padding: 2rem;
+  }
+
+  #video > div .content h2 {
+    font-size: 2rem;
+    letter-spacing: 0.01rem;
+    line-height: 2rem;
+  }
+
+  #video > div .content p{
+    line-height: 1.5rem;
+  }
+
+  #video > div .content button{
+    height: 55px;
+    width: 300px;
+  }
+
+  #about > div {
+    max-width: 420px;
+  }
+  
+  #about div .strokes {
+    max-width: 420px;
+  }
+  
+  #about div .strokes img {
+    width: 100%;
+  }
+  
+  #about .content {
+    padding: 1rem 2rem 1rem;
+  }
+
+  #about .content #image {
+    width: 100%;
+    text-align: center;
+  }
+
+  #about .content #image img{
+    width: 100%;
+    height: auto;
+  }
+
+  #about .content #info h2{
+    font-size: 2rem;
+  }
+
+  #about .content #info p{
+    font-size: 1.1rem;
+  }
+
+  #about .content #info button{
+    height: 55px;
+    width: 300px;
+  }
+}
+
 
 /* ----- ABOUT - FIM (RAQUEL) ----- */
 
