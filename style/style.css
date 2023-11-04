@@ -104,6 +104,7 @@ button:hover {
 }
 
 #introduction-text-box {
+  /* display: flex0; */
   background-image: url("../assets/images/introduction-text-box-ellipse.png");
   background-repeat: no-repeat;
 }
@@ -176,6 +177,25 @@ button:hover {
   line-height: 35px; /* 194.444% */
   letter-spacing: 0.54px;
   text-align: center;
+}
+
+@media screen and (max-width: 480px){
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* height: 683px;
+    width: 100%;
+    background-color: #ffeab6;
+    background-image: url("../assets/images/home-ellipse.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 0 120px; */
+  }
+
+  #nav-menu {
+    display: flex;
+  }
 }
 /* ------------------- CABEÇALHO E HOME - GABRIEL - FIM ----------- */
 
