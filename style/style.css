@@ -1,9 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -81,6 +85,112 @@ button:hover {
   list-style: none;
 }
 
+#mobile-menu-btn {
+  display: none;
+}
+
+/* --------------- ADAPTAÇÃO MENU RESPONSIVO - HENRIQUE - INICIO -------------  */
+
+/**/
+
+@media screen and (max-width: 780px) {
+
+  #mobile-menu-btn {
+    display: block;
+  }
+
+  #header-introduction {
+    display: none;
+  }
+  
+  #home {
+    min-height: 100vh;
+  }
+}
+
+#mobile-menu-btn {
+  position: fixed;
+  z-index: 5;
+  right: 5%;
+  top: 3%;
+  width: 45px;
+}
+
+#close-mobile-menu {
+  position: fixed;
+  z-index: 5;
+  right: 5%;
+  top: 3%;
+  width: 45px;
+}
+
+#mobile-menu-box {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #B744B8;
+  z-index: 100;
+  font-family: "Raleway", sans-serif;
+}
+
+.mobile-nav {
+  width: 90%;
+  height: auto;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: #4A4A3A;
+}
+
+.mobile-nav ul,
+li {
+  list-style: none !important;
+}
+
+.mobile-nav li {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  margin: 15px 0;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.4px;
+}
+
+.mobile-location-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-location-menu h4 {
+  color: #EDEDED;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 34px;
+  /* 170% */
+  letter-spacing: 0.6px;
+  text-decoration-line: underline;
+}
+
+/* --------------- ADAPTAÇÃO MENU RESPONSIVO - HENRIQUE - FIM -------------  */
+
 #home {
   display: flex;
   justify-content: space-around;
@@ -109,14 +219,15 @@ button:hover {
   background-repeat: no-repeat;
 }
 
-#introduction-text-box > p {
+#introduction-text-box>p {
   margin-top: 30px;
   color: #686868;
   font-family: "Lora";
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 35px; /* 175% */
+  line-height: 35px;
+  /* 175% */
   letter-spacing: 0.6px;
   width: 451px;
 }
@@ -169,41 +280,31 @@ button:hover {
 }
 
 
-#home button > p {
+#home button>p {
   color: #fff;
   font-size: 18px;
   font-family: "Raleway";
   font-weight: 700;
-  line-height: 35px; /* 194.444% */
+  line-height: 35px;
+  /* 194.444% */
   letter-spacing: 0.54px;
   text-align: center;
 }
 
-@media screen and (max-width: 480px){
-  #home {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    /* height: 683px;
-    width: 100%;
-    background-color: #ffeab6;
-    background-image: url("../assets/images/home-ellipse.png");
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    padding: 0 120px; */
-  }
-
-  #nav-menu {
-    display: flex;
-  }
-}
 /* ------------------- CABEÇALHO E HOME - GABRIEL - FIM ----------- */
 
 /* -------- SERVIÇOS - GABRIEL - INICIO ------- */
 #services {
   /* display: flex; */
   width: 1440px;
-  height: 1348px;
+  height: auto;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+  #services {
+    padding: 150px 0;
+  }
 }
 
 .services-title {
@@ -220,7 +321,8 @@ button:hover {
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 70px; /* 175% */
+  line-height: 70px;
+  /* 175% */
   letter-spacing: 1.2px;
 }
 
@@ -233,7 +335,8 @@ button:hover {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 35px; /* 175% */
+  line-height: 35px;
+  /* 175% */
   letter-spacing: 0.6px;
   margin-bottom: 74px;
 }
@@ -243,6 +346,48 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+
+  .services-cards-box {
+    flex-wrap: nowrap;
+    column-gap: 2em;
+    overflow-x: scroll;
+  }
+
+  .d-none {
+    display: none !important;
+  }
+
+  .card-pointer {
+    margin-top: 50px;
+  }
+
+  /**/
+
+  .section-presentation h2 {
+    color: #020202;
+    text-align: center;
+    font-family: Lora;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+
+  }
+
+  .section-presentation h3 {
+    color: #686868;
+    text-align: center;
+    font-family: Lora;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    width: 85%;
+  }
 }
 
 .services-cards {
@@ -290,7 +435,8 @@ button:hover {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 35px; /* 175% */
+  line-height: 35px;
+  /* 175% */
   letter-spacing: 0.6px;
 }
 
@@ -298,6 +444,7 @@ button:hover {
   margin: 0 auto;
   display: block;
 }
+
 /* -------- SERVIÇOS - GABRIEL - FIM ------- */
 
 /* -------------- VIDEO E ABOUT - RAQUEL -------------- */
@@ -312,7 +459,7 @@ button:hover {
   margin: 8rem 0;
 }
 
-#video > div {
+#video>div {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -321,16 +468,17 @@ button:hover {
   padding: 1rem 2rem 1rem;
 }
 
-#video > div .content {
+#video>div .content {
   text-align: center;
   width: 60%;
 }
-#video > div #videos {
+
+#video>div #videos {
   text-align: center;
   width: 40%;
 }
 
-#video > div .content h2 {
+#video>div .content h2 {
   color: #020202;
   font-family: Lora;
   font-size: 2.5rem;
@@ -341,7 +489,7 @@ button:hover {
   margin-bottom: 3rem;
 }
 
-#video > div .content p {
+#video>div .content p {
   color: #686868;
   font-family: Lora;
   font-size: 1.25rem;
@@ -352,7 +500,7 @@ button:hover {
   margin-bottom: 1rem;
 }
 
-#video > div .content button {
+#video>div .content button {
   margin-top: 60px;
   width: 336px;
   height: 60px;
@@ -369,7 +517,7 @@ button:hover {
   text-align: center;
 }
 
-#video > div #videos {
+#video>div #videos {
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -377,7 +525,7 @@ button:hover {
   align-items: center;
 }
 
-#video > div #videos .btn-video {
+#video>div #videos .btn-video {
   background: white;
   color: black;
   outline: none;
@@ -410,7 +558,7 @@ button:hover {
   width: 100% !important;
 }
 
-#video > div #videos video {
+#video>div #videos video {
   width: 25rem;
   border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -442,18 +590,16 @@ button:hover {
 
 /* ----- ABOUT - INÍCIO (RAQUEL) ----- */
 
-#about > div {
+#about>div {
   display: grid;
   justify-content: center;
   justify-items: center;
   overflow: hidden;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    #fff3d7 8.33%,
-    #fff1ce 93.23%,
-    rgba(255, 255, 255, 0.5) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      #fff3d7 8.33%,
+      #fff1ce 93.23%,
+      rgba(255, 255, 255, 0.5) 100%);
 }
 
 #about div .strokes {
@@ -526,34 +672,34 @@ button:hover {
     margin: 2rem;
   }
 
-  #video > div {
+  #video>div {
     flex-direction: column;
     max-width: 940px;
     padding: 2rem;
     row-gap: 3.87rem;
   }
 
-  #video > div .content {
+  #video>div .content {
     width: 100%;
   }
 
-  #video > div .content h2 {
+  #video>div .content h2 {
     font-size: 3rem;
     letter-spacing: 0.09rem;
   }
 
-  #about > div {
+  #about>div {
     max-width: 940px;
   }
-  
+
   #about div .strokes {
     max-width: 940px;
   }
-  
+
   #about div .strokes img {
     width: 100%;
   }
-  
+
   #about .content {
     flex-direction: column;
     max-width: 940px;
@@ -561,11 +707,11 @@ button:hover {
     padding: 1rem 4rem 1rem;
   }
 
-  #about .content #image img{
+  #about .content #image img {
     height: 40rem;
   }
 
-  #about .content #info{
+  #about .content #info {
     width: 100%;
     display: grid;
     justify-items: center;
@@ -573,38 +719,38 @@ button:hover {
 }
 
 @media screen and (max-width: 480px) {
-  #video > div .content {
+  #video>div .content {
     max-width: 420px;
     padding: 2rem;
   }
 
-  #video > div .content h2 {
+  #video>div .content h2 {
     font-size: 2rem;
     letter-spacing: 0.01rem;
     line-height: 2rem;
   }
 
-  #video > div .content p{
+  #video>div .content p {
     line-height: 1.5rem;
   }
 
-  #video > div .content button{
+  #video>div .content button {
     height: 55px;
     width: 300px;
   }
 
-  #about > div {
+  #about>div {
     max-width: 420px;
   }
-  
+
   #about div .strokes {
     max-width: 420px;
   }
-  
+
   #about div .strokes img {
     width: 100%;
   }
-  
+
   #about .content {
     padding: 1rem 2rem 1rem;
   }
@@ -614,20 +760,20 @@ button:hover {
     text-align: center;
   }
 
-  #about .content #image img{
+  #about .content #image img {
     width: 100%;
     height: auto;
   }
 
-  #about .content #info h2{
+  #about .content #info h2 {
     font-size: 2rem;
   }
 
-  #about .content #info p{
+  #about .content #info p {
     font-size: 1.1rem;
   }
 
-  #about .content #info button{
+  #about .content #info button {
     height: 55px;
     width: 300px;
   }
@@ -663,6 +809,8 @@ button:hover {
   column-gap: 2rem;
 }
 
+@media screen and (max-width: 480px) {}
+
 .carroussel-card {
   max-width: 400px;
 }
@@ -682,7 +830,7 @@ button:hover {
   margin-top: -10px;
 }
 
-svg + p {
+svg+p {
   color: #888888;
   font-family: Lora;
   font-size: 1rem;
@@ -695,7 +843,7 @@ svg + p {
   margin-left: 55px;
 }
 
-svg + span {
+svg+span {
   display: block;
   color: #020202;
   font-family: Lora;
@@ -710,7 +858,7 @@ svg + span {
 
 /* ----- CONTATO - INÍCIO (PIMENTEL) ----- */
 
-#appraisal + .section-presentation {
+#appraisal+.section-presentation {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -744,6 +892,16 @@ h3 {
   display: flex;
   justify-content: center;
   margin-top: 14rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-box {
+    display: none !important;
+  }
+
+  .final-btn {
+    margin: 60px 0;
+  }
 }
 
 #contact {
