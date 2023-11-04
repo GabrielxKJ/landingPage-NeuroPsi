@@ -31,3 +31,21 @@ const moveLeft = () => {
 
 rightBtn.addEventListener("click", moveRight);
 leftBtn.addEventListener("click", moveLeft);
+
+//menu Mobile
+const btnMobile = document.querySelector('#mobile-menu-btn');
+const closeMobile = document.querySelector('#close-mobile-menu');
+const mobileMenu = document.querySelector('#mobile-menu-box');
+
+const setMenuOpen = () => {
+    mobileMenu.style.display = "flex";
+}
+
+const setMenuClosed = () => {
+    mobileMenu.style.display = "none";
+}
+
+//forte recomendação: usem jQuery, ajuda bastante a encurtar o código rs
+
+btnMobile.addEventListener("click", setMenuOpen);
+closeMobile.addEventListener("click", setMenuClosed);
