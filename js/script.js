@@ -32,10 +32,11 @@ const moveLeft = () => {
 rightBtn.addEventListener("click", moveRight);
 leftBtn.addEventListener("click", moveLeft);
 
-//menu Mobile
+//menu Mobile start
 const btnMobile = document.querySelector('#mobile-menu-btn');
 const closeMobile = document.querySelector('#close-mobile-menu');
 const mobileMenu = document.querySelector('#mobile-menu-box');
+const mobileMenuItem = $('.mobile-nav-item')
 
 const setMenuOpen = () => {
     mobileMenu.style.display = "flex";
@@ -45,7 +46,32 @@ const setMenuClosed = () => {
     mobileMenu.style.display = "none";
 }
 
-//forte recomendação: usem jQuery, ajuda bastante a encurtar o código rs
-
 btnMobile.addEventListener("click", setMenuOpen);
 closeMobile.addEventListener("click", setMenuClosed);
+mobileMenuItem.click(setMenuClosed);
+//menu Mobile end
+
+//function slide carroussel-card - depoimentos
+const carrousselCards = $(".carroussel-card");
+let currentCardIndex = 0;
+
+function hideAllCards() {
+    carrousselCards.hide();
+}
+
+function showNextCard() {
+    hideAllCards();
+    carrousselCards.eq(currentCardIndex).fadeIn(750);
+    currentCardIndex = (currentCardIndex + 1) % carrousselCards.length;
+}
+
+showNextCard();
+
+const sliderInterval = setInterval(showNextCard, 9000);
+//function slide carroussel-card - depoimentos end
+
+
+
+
+
+
