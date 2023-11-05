@@ -463,7 +463,20 @@ li {
 
 @media screen and (max-width: 768px) {
   #services {
+    display: flex;
+    flex-direction: column;
     padding: 150px 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services-title h1 {
+    font-size: 30px !important;
+  }
+
+  .services-title p {
+    font-size: 18px !important;
+    width: 90vw !important;
   }
 }
 
@@ -955,6 +968,8 @@ li {
 
 #appraisal {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   flex-basis: 100%;
   max-width: 1300px;
@@ -970,7 +985,6 @@ li {
 }
 
 @media screen and (max-width: 480px) {}
-
 .carroussel-card {
   max-width: 400px;
 }
