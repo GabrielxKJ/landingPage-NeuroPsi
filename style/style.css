@@ -233,7 +233,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1em;
+  gap: 2em;
   font-family: "Raleway", sans-serif;
 }
 
@@ -245,7 +245,7 @@ li {
 }
 
 .mobile-links span {
-  font-size: 15px;
+  font-size: 18px;
   color: #FFF;
   font-family: "Raleway", sans-serif;
 }
