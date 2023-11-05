@@ -22,8 +22,13 @@ body {
 /* ---------- USO COMUM ---------- */
 
 main {
+  /* max-width: 1440px; */
+  width: 100%;
   display: flex;
+  /* flex-direction: column; */
   flex-wrap: wrap;
+  /* align-items: center; */
+  /* width: 100%; */
   justify-content: center;
 }
 
@@ -50,26 +55,32 @@ button:hover {
 }
 
 /* --------------- CABEÇALHO E HOME - GABRIEL - INICIO -------------  */
+#container {
+  background-color:#ffeab6;
+}
 
 #header-introduction {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content:space-between;
+  /* margin: 0 auto; */
   height: 5rem;
+  padding-right: 120px;
+  padding-left: 198px;
   background-color: #ffeab6;
+  max-width: 100%; 
 }
 
 #logo {
-  margin-left: 120px;
+  /* margin-left: 120px; */
   width: 200px;
 }
 
 #nav-menu {
   display: flex;
-  margin-right: 120px;
+  /* margin-left: ; */
   /* align-items: flex-end; */
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   /* background-color: red; */
   font-family: "Raleway", sans-serif;
 }
@@ -89,7 +100,7 @@ button:hover {
   display: none;
 }
 
-/* --------------- ADAPTAÇÃO MENU RESPONSIVO - HENRIQUE - INICIO -------------  */
+/* --------------- ADAPTAÇÃO MENU RESPONSIVO - HENRIQUE && GABRIEL- INICIO -------------  */
 
 /**/
 
@@ -104,8 +115,15 @@ button:hover {
   }
   
   #home {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 0 120px;
     min-height: 100vh;
   }
+
 }
 
 #mobile-menu-btn {
@@ -191,10 +209,14 @@ li {
 
 /* --------------- ADAPTAÇÃO MENU RESPONSIVO - HENRIQUE - FIM -------------  */
 
+
+
 #home {
+  /* max-width: 1440px; */
+  overflow: hidden;
   display: flex;
-  justify-content: space-around;
-  height: 683px;
+  justify-content: center;
+  /* height: 683px; */
   width: 100%;
   background-color: #ffeab6;
   background-image: url("../assets/images/home-ellipse.png");
@@ -241,6 +263,7 @@ li {
 
 #introduction-image-box img {
   height: 640px;
+  margin-left: 70px;
 }
 
 .image-box-description-title {
@@ -280,7 +303,7 @@ li {
 }
 
 
-#home button>p {
+#home button > p {
   color: #fff;
   font-size: 18px;
   font-family: "Raleway";
@@ -291,12 +314,81 @@ li {
   text-align: center;
 }
 
+@media screen and (max-width:480px) {
+  #home {
+    display: flex;
+    /* flex-direction: column; Altera a direção para coluna em telas menores */
+    align-items: center; /* Centraliza o conteúdo na tela */
+    background-color: #ffeab6;
+    background-image: url("../assets/images/home-ellipse.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 20px; 
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  #home h1 {
+    font-weight: 600;
+    font-size: 28px; /* Reduz o tamanho da fonte */
+    line-height: 40px; /* Ajusta a linha de altura */
+    letter-spacing: 0.84px; /* Ajusta o espaçamento das letras */
+    width: auto; /* Remove a largura fixa */
+    max-width: 90%; /* Define uma largura máxima para evitar que o texto fique muito largo */
+  }
+  
+  #introduction-text-box {
+    background-image: url("../assets/images/introduction-text-box-ellipse.png");
+    background-repeat: no-repeat;
+    padding: 20px; /* Reduz o preenchimento */
+  }
+  
+  #introduction-text-box > p {
+    font-size: 16px; /* Reduz o tamanho da fonte */
+    line-height: 28px; /* Ajusta a linha de altura */
+    letter-spacing: 0.48px; /* Ajusta o espaçamento das letras */
+    width: auto; /* Remove a largura fixa */
+    max-width: 90%; /* Define uma largura máxima */
+  }
+  
+  #introduction-image-box {
+    background-image: url("../assets/images/introduction-image-box-ellipse.png");
+    background-repeat: no-repeat;
+    background-position: center; /* Centraliza a imagem */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 20px; /* Adiciona margem superior */
+  }
+  
+  #introduction-image-box img {
+    height: auto; /* Remove a altura fixa */
+    width: 100%; /* Ajusta a largura da imagem para 100% da largura do contêiner */
+    max-width: 90%; /* Define uma largura máxima */
+  }
+  
+  .image-box-description-title,
+  .image-box-description-subtitle {
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  #home button {
+    margin-top: 20px; /* Adiciona margem superior */
+    width: 100%; /* Define a largura como 100% para preencher a largura do contêiner */
+    max-width: 90%; /* Define uma largura máxima */
+  }
+  
+  #home button > p {
+    line-height: 24px; /* Ajusta a linha de altura */
+    letter-spacing: 0.36px; /* Ajusta o espaçamento das letras */
+  }
+  
+  
+}
+
 /* ------------------- CABEÇALHO E HOME - GABRIEL - FIM ----------- */
 
 /* -------- SERVIÇOS - GABRIEL - INICIO ------- */
 #services {
   /* display: flex; */
-  width: 1440px;
+  max-width: 1440px;
   height: auto;
   padding: 50px 0;
 }
