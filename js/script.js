@@ -32,46 +32,62 @@ const moveLeft = () => {
 rightBtn.addEventListener("click", moveRight);
 leftBtn.addEventListener("click", moveLeft);
 
-//menu Mobile start
-const btnMobile = document.querySelector('#mobile-menu-btn');
-const closeMobile = document.querySelector('#close-mobile-menu');
-const mobileMenu = document.querySelector('#mobile-menu-box');
-const mobileMenuItem = $('.mobile-nav-item')
+/* Hamburguer Menu */
+const mobileBtn = document.querySelector('#btn-mobile');
 
-const setMenuOpen = () => {
-    mobileMenu.style.display = "flex";
+function toggleMenu() {
+  const nav = document.querySelector('#nav-menu');
+
+  nav.classList.toggle('active');
 }
 
-const setMenuClosed = () => {
-    mobileMenu.style.display = "none";
-}
+mobileBtn.addEventListener('click', toggleMenu);
+/* Hamburguer Menu */
 
-btnMobile.addEventListener("click", setMenuOpen);
-closeMobile.addEventListener("click", setMenuClosed);
-mobileMenuItem.click(setMenuClosed);
-//menu Mobile end
+/*Sticky Header*/
+var stickyHeader = document.querySelector('#header');
+var navLinks = document.querySelector('.nav-links');
 
-//function slide carroussel-card - depoimentos
-const carrousselCards = $(".carroussel-card");
-let currentCardIndex = 0;
+window.addEventListener("scroll", function(e) {
+  if (window.pageYOffset > 100) {
+    stickyHeader.style.padding = "5px 25px 20px 25px";
 
-function hideAllCards() {
-    carrousselCards.hide();
-}
+    if (window.matchMedia("(max-width: 870px)").matches) {
+      navLinks.style.top = "6rem";
+    }
 
-function showNextCard() {
-    hideAllCards();
-    carrousselCards.eq(currentCardIndex).fadeIn(750);
-    currentCardIndex = (currentCardIndex + 1) % carrousselCards.length;
-}
+  } else {
+    stickyHeader.style.padding = "15px 25px";
+    
+    if (window.matchMedia("(max-width: 870px)").matches) {
+      navLinks.style.top = "7.3rem";
+    }
+  }
+})
+/*Sticky Header*/
 
-showNextCard();
+/*Sliders*/
+const swiperTestimonial = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true, 
+    autoplay: {
+        delay: 5000
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        1200: {
+            slidesPerView: 3, 
+            spaceBetween: 50, 
+        }
+    },
 
-const sliderInterval = setInterval(showNextCard, 9000);
-//function slide carroussel-card - depoimentos end
-
-
-
-
-
-
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true, 
+        dragabble: true,
+    },
+});
+/*Sliders*/
