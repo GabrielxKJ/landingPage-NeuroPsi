@@ -690,6 +690,10 @@ li {
   text-align: center;
 }
 
+#video>div .content button:hover {
+  background-color: #613385;
+}
+
 #video>div #videos {
   margin: 0 auto;
   text-align: center;
@@ -838,6 +842,10 @@ li {
   line-height: 35px;
   letter-spacing: 0.54px;
   text-align: center;
+}
+
+#about .content #info button:hover {
+  background-color: #613385;
 }
 
 @media screen and (max-width: 991px) {
