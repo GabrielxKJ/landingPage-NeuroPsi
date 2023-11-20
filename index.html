@@ -37,16 +37,16 @@
           </button>
           <ul class="nav-links">
             <li>
-              <a class="nav-link" href="">Serviços</a>
+              <a class="nav-link" href="#services">Serviços</a>
             </li>
             <li>
-              <a class="nav-link" href="">Sobre</a>
+              <a class="nav-link" href="#about">Sobre</a>
             </li>
             <li>
-              <a class="nav-link" href="">Avaliações</a>
+              <a class="nav-link" href="#appraisal">Avaliações</a>
             </li>
             <li>
-              <a class="nav-link" href="">Contato</a>
+              <a class="nav-link" href="#contact">Contato</a>
             </li>
             <li>
               <a class="nav-link" href="">Endereços</a>
@@ -90,7 +90,7 @@
         </div>
       </section>
 
-      <section id="services">
+      <section id="services" class="services">
         <div class="container">
           <div class="services-title">
             <h1>Serviços e especialidades exclusivas pra você</h1>
@@ -162,7 +162,93 @@
               </p>
             </div>
           </div>
-          <button class="button btn-primary">conheça outros serviços</button>
+
+          <div class="swiper-container">
+            <div class="swiper swiperServices">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide services-cards">
+                  <img
+                    src="./assets/logo/icons/diagnosticar.png"
+                    alt="service-logo"
+                  />
+                  <h3>Avaliação Neuropsicopedagógica</h3>
+                  <p>
+                    Investigação das dificuldades e distúrbios de aprendizagem a
+                    partir do entendimento do funcionamento cerebral.
+                  </p>
+                </div>
+                <div class="swiper-slide services-cards">
+                  <img
+                    src="./assets/logo/icons/medicina-natural.png"
+                    alt="service-logo"
+                  />
+                  <h3>Intervenção Neuropsicopedagógica</h3>
+                  <p>
+                    Despertamento da motivação do paciente para o estudo,
+                    através de estímulos e metodologias apropriados e
+                    personalizados.
+                  </p>
+                </div>
+                <div class="swiper-slide services-cards">
+                  <img src="./assets/logo/icons/reiki.png" alt="service-logo" />
+                  <h3>Terapia para Saúde Mental</h3>
+                  <p>
+                    Psicanálise, neurociências e terapia quântica com
+                    reprogramação mental, nas modalidades online e presencial.
+                  </p>
+                </div>
+                <div class="swiper-slide services-cards">
+                  <img
+                    src="./assets/logo/icons/saude-mental.png"
+                    alt="service-logo"
+                  />
+                  <h3>Consulta Naturopata</h3>
+                  <p>
+                    Recomendação terapêutica específica para o tratamento de
+                    patologia, distúrbio ou transtorno, através de remédios
+                    naturais fitoterápicos e homeopáticos.
+                  </p>
+                </div>
+                <div class="swiper-slide services-cards">
+                  <img
+                    src="./assets/logo/icons/therapy.png"
+                    alt="service-logo"
+                  />
+                  <h3>Curso de Terapias Manuais</h3>
+                  <p>
+                    Para profissionais da área da saúde, estudantes ou para quem
+                    deseja se tornar um terapeuta.
+                  </p>
+                </div>
+                <div class="swiper-slide services-cards">
+                  <img
+                    src="./assets/logo/icons/treinamento.png"
+                    alt="service-logo"
+                  />
+                  <h3>Medicina Oriental com Reprogramação Mental</h3>
+                  <p>
+                    Tratamento de diversas patologias, transtornos e doenças
+                    físicas e de ordem emocionais através do método Neuro
+                    Dinâmico Shen.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="buttons-container container">
+              <img
+                src="./assets/images/arrow-next.svg"
+                class="swiper-next services-next"
+              />
+
+              <img
+                src="./assets/images/arrow-prev.svg"
+                class="swiper-prev services-prev"
+              />
+            </div>
+          </div>
+
+          <button class="button btn-primary">Conheça outros serviços</button>
         </div>
       </section>
 
@@ -246,7 +332,7 @@
         </div>
       </section>
 
-      <section class="testimonial" id="appraisal">
+      <!-- <section class="testimonial" id="appraisal">
         <div class="container">
           <div class="testimonial-text-introduction">
             <h2>Avaliações e depoimentos</h2>
@@ -256,7 +342,7 @@
             </p>
           </div>
 
-          <div class="swiper">
+          <div class="swiper swiperTestimonial">
             <div class="swiper-wrapper">
               <div class="carroussel-card swiper-slide">
                 <svg
@@ -412,6 +498,75 @@
             <button class="btn-primary">Seja o próximo cliente!</button>
           </div>
         </div>
+      </section> -->
+
+      <section class="testimonial" id="appraisal">
+        <div class="container">
+          <div class="testimonial-text-introduction">
+            <h2>Avaliações e depoimentos</h2>
+            <p>
+              Veja aqui o que nossos clientes falam sobre os nossos serviços e
+              conheça um pouco mais sobre eles.
+            </p>
+          </div>
+
+          <div class="swiper-container">
+            <div class="swiper swiperTestimonial">
+              <div class="swiper-wrapper">
+                <div class="carroussel-card swiper-slide">
+                  <div class="box">
+                    <p>
+                      Superou minhas expectativas, valor pago foi irrisório pelo
+                      serviço que recebi. Profissional acima da média, humana,
+                      em poucas consultas já passei a admirar a competência.
+                      Super recomendo.
+                    </p>
+                  </div>
+                  <span>Jonias</span>
+                </div>
+                <div class="carroussel-card swiper-slide">
+                  <div class="box">
+                    <p>
+                      Excelente profissional, sua dedicação e habilidades
+                      notáveis fizeram dela uma terapeuta excepcional. Desde o
+                      primeiro encontro, pude sentir sua empatia genuina e
+                      interesse sincero em compreender minha jornada emocional.
+                      Sua capacidade...
+                    </p>
+                  </div>
+                  <span>Caciano</span>
+                </div>
+                <div class="carroussel-card swiper-slide">
+                  <div class="box">
+                    <p>
+                      Ah falar da Dr Juliana é um prazer...... começamos
+                      tratamento e logo percebemos seu cuidado e amor, só tenho
+                      gratidão pelo atendimento humanizado e eficaz,
+                      profissional de excelência, super recomendo, bjsss
+                    </p>
+                  </div>
+                  <span>Regiane</span>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="buttons-container container">
+              <img
+                src="./assets/images/arrow-next.svg"
+                class="swiper-next testimonial-next"
+              />
+
+              <img
+                src="./assets/images/arrow-prev.svg"
+                class="swiper-prev testimonial-prev"
+              />
+            </div>
+          </div>
+
+          <div class="testimonial-action">
+            <button class="btn-primary">Seja o próximo cliente!</button>
+          </div>
+        </div>
       </section>
 
       <section class="contact" id="contact">
@@ -421,60 +576,64 @@
             Faça agora seu orçamento por uma das formas de contato abaixo.
           </h3> -->
 
-          <div class="contact-box">
-            <div class="contact-card wpp-card">
-              <p>WhatsApp</p>
-              <p class="card-info">(13) 98802-1481</p>
+          <div class="content">
+            <div class="contact-box">
+              <div class="contact-card wpp-card">
+                <p>WhatsApp</p>
+                <p class="card-info">(13) 98802-1481</p>
+              </div>
+              <div class="contact-card insta-card">
+                <p>Instagram</p>
+                <p class="card-info">@juliannarocha_saudeintegral</p>
+              </div>
+              <div class="contact-card tel-card">
+                <p>Telefone</p>
+                <p class="card-info">(13) 98802-1481</p>
+              </div>
+              <div class="contact-card email-card">
+                <p>E-mail</p>
+                <p class="card-info">dra.juliannarocha@gmail.com</p>
+              </div>
             </div>
-            <div class="contact-card insta-card">
-              <p>Instagram</p>
-              <p class="card-info">@juliannarocha_saudeintegral</p>
-            </div>
-            <div class="contact-card tel-card">
-              <p>Telefone</p>
-              <p class="card-info">(13) 98802-1481</p>
-            </div>
-            <div class="contact-card email-card">
-              <p>E-mail</p>
-              <p class="card-info">dra.juliannarocha@gmail.com</p>
-            </div>
-            <div class="formbox">
-              <form action="" class="contact-form">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Digite aqui o seu e-mail"
-                />
-                <input
-                  type="text"
-                  name="nome"
-                  id="nome"
-                  placeholder="Digite aqui o seu nome"
-                />
-                <textarea
-                  name="msg"
-                  id="msg"
-                  placeholder="Digite aqui a sua mensagem"
-                ></textarea>
-                <input type="submit" value="Enviar" />
-              </form>
-            </div>
+            <div class="row">
+              <div class="formbox">
+                <form action="" class="contact-form">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Digite aqui o seu e-mail"
+                  />
+                  <input
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    placeholder="Digite aqui o seu nome"
+                  />
+                  <textarea
+                    name="msg"
+                    id="msg"
+                    placeholder="Digite aqui a sua mensagem"
+                  ></textarea>
+                  <input type="submit" value="Enviar" />
+                </form>
+              </div>
 
-            <div id="address">
-              <p>Julianna Rocha Saúde Integral</p>
-              <address>
-                Av. Conselheiro Nébias 703 - 21° andar - cj. 2102 - Boqueirão
-                Vila Rica - Edifício Unique Offices, Boqueirão, Santos
-              </address>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.858282820741!2d-46.32590542465735!3d-23.96545097852428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce0363f7d8e20d%3A0xcac8535f176f5c53!2sJulianna%20Rocha%20Sa%C3%BAde%20Integral%20-%20Psican%C3%A1lise%20-%20Avalia%C3%A7%C3%A3o%20Neuropsicopedag%C3%B3gica%20-%20Acupuntura%20-%20Homeopatia%20-%20Quiropraxia!5e0!3m2!1spt-BR!2sbr!4v1698430456013!5m2!1spt-BR!2sbr"
-                width="550"
-                height="380"
-                style="border: 0"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+              <div id="address">
+                <p>Julianna Rocha Saúde Integral</p>
+                <address>
+                  Av. Conselheiro Nébias 703 - 21° andar - cj. 2102 - Boqueirão
+                  Vila Rica - Edifício Unique Offices, Boqueirão, Santos
+                </address>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.858282820741!2d-46.32590542465735!3d-23.96545097852428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce0363f7d8e20d%3A0xcac8535f176f5c53!2sJulianna%20Rocha%20Sa%C3%BAde%20Integral%20-%20Psican%C3%A1lise%20-%20Avalia%C3%A7%C3%A3o%20Neuropsicopedag%C3%B3gica%20-%20Acupuntura%20-%20Homeopatia%20-%20Quiropraxia!5e0!3m2!1spt-BR!2sbr!4v1698430456013!5m2!1spt-BR!2sbr"
+                  width="550"
+                  height="380"
+                  style="border: 0"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
