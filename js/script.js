@@ -1,6 +1,8 @@
 const video = document.getElementById('my-video');
 const rightBtn = document.getElementById('right-btn');
 const leftBtn = document.getElementById('left-btn');
+const rightBtnMobile = document.querySelector('#mobile-video #right-btn');
+const leftBtnMobile = document.querySelector('#mobile-video #left-btn');
 
 // URLs dos vídeos
 let videos = ['./assets/videos/podcast01.mp4', './assets/videos/podcast02.mp4'];
@@ -31,6 +33,8 @@ const moveLeft = () => {
 
 rightBtn.addEventListener("click", moveRight);
 leftBtn.addEventListener("click", moveLeft);
+rightBtnMobile.addEventListener("click", moveRight);
+leftBtnMobile.addEventListener("click", moveLeft);
 
 //menu Mobile start
 const btnMobile = document.querySelector('#mobile-menu-btn');
@@ -69,9 +73,3 @@ showNextCard();
 
 const sliderInterval = setInterval(showNextCard, 9000);
 //function slide carroussel-card - depoimentos end
-
-
-
-
-
-

@@ -9,8 +9,9 @@
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 	<link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
 	<link rel="icon" type="image/png" href="/assets/logo/favicon.png">
-	<script src="https://code.jquery.com/jquery-3.7.1.js"
-		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+		integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+		crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -251,6 +252,14 @@
 						<button id="right-btn" class="btn-video">
 							<i class="uil uil-angle-right-b"></i>
 						</button>
+						<div id="mobile-video">
+							<button id="left-btn" class="btn-video">
+								<i class="uil uil-angle-left-b"></i>
+							</button>
+							<button id="right-btn" class="btn-video">
+								<i class="uil uil-angle-right-b"></i>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -378,10 +387,8 @@
 					<span>Regiane</span>
 				</div>
 			</div>
-			<button 
-				class="final-btn"
-				onclick="window.location.href = 'https://api.whatsapp.com/send?phone=5513988021481&text=Olá,%20Dra.%20Julianna%20Rocha,%20estou%20interessado%20em%20agendar%20uma%20consulta.%20Como%20posso%20prosseguir%3F'"
-			>
+			<button class="final-btn"
+				onclick="window.location.href = 'https://api.whatsapp.com/send?phone=5513988021481&text=Olá,%20Dra.%20Julianna%20Rocha,%20estou%20interessado%20em%20agendar%20uma%20consulta.%20Como%20posso%20prosseguir%3F'">
 				Seja o próximo cliente!
 			</button>
 		</section>
@@ -416,7 +423,7 @@
 						</article>
 					</div>
 				</div>
-				
+
 				<div class="formbox">
 					<form action="" class="contact-form">
 						<input type="email" name="email" id="email" placeholder="Digite aqui o seu e-mail">
